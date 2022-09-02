@@ -5,10 +5,6 @@
         <listener-class>dao.InitConnexion</listener-class>
     </listener>
     <servlet>
-        <servlet-name>ServletTest</servlet-name>
-        <servlet-class>sio.rostand.test.ServletTest</servlet-class>
-    </servlet>
-    <servlet>
         <servlet-name>ServletGroupe</servlet-name>
         <servlet-class>servlet.ServletGroupe</servlet-class>
     </servlet>
