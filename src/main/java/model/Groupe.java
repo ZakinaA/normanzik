@@ -4,6 +4,8 @@
  */
 package model;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Zakina
@@ -14,6 +16,8 @@ public class Groupe {
     private String nom;
     private String dateCreation;
     private Genre genre ;
+    private ArrayList<Titre> lesTitres;
+    
 
     public Groupe() {
     }
@@ -48,6 +52,14 @@ public class Groupe {
 
     public void setGenre(Genre genre) {
         this.genre = genre;
+    }
+
+    public ArrayList<Titre> getLesTitres() {
+        return lesTitres;
+    }
+
+    public void setLesTitres(ArrayList<Titre> lesTitres) {
+        this.lesTitres = lesTitres;
     }
 
    

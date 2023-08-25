@@ -1,0 +1,12 @@
+model\Groupe.class
+test\ConnexionBdd.class
+servlet\ServletTest.class
+dao\DaoGroupe.class
+model\Titre.class
+dao\DaoAdmin.class
+dao\Utilitaire.class
+dao\InitConnexion.class
+form\FormGroupe.class
+servlet\ServletGroupe.class
+model\Genre.class
+test\TestDaoGroupe.class

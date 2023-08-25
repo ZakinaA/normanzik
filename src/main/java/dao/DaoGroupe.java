@@ -11,6 +11,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import model.Genre;
 import model.Groupe;
+import model.Titre;
 
 /**
  *
@@ -83,6 +84,9 @@ public class DaoGroupe {
                 leGenre.setLibelle(rs.getString("gre_libelle"));
 
                 leGroupe.setGenre(leGenre);
+                
+                ArrayList<Titre> lesTitres = getLesTitresDuGroupe(connection, idGroupe);
+                leGroupe.setLesTitres(lesTitres);
 
             }
         }
@@ -94,6 +98,12 @@ public class DaoGroupe {
         return leGroupe ;
     }
 
+     public static ArrayList<Titre> getLesTitresDuGroupe(Connection connection, int idGroupe){
+         ArrayList<Titre> lesTitres = new ArrayList<Titre>();
+         return lesTitres;
+     }
+    
+    
     public static Groupe ajouterGroupe(Connection connection, Groupe unGroupe){
         int idGenere = -1;
         try
